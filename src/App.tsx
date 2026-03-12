@@ -22,6 +22,15 @@ export default function App() {
           setDirection(-1);
           setCurrentSlideIndex(prev => prev - 1);
         }
+      } else if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+        const scrollContainer = document.getElementById('slide-scroll-container');
+        if (scrollContainer) {
+          const scrollAmount = 60;
+          scrollContainer.scrollBy({
+            top: e.key === 'ArrowDown' ? scrollAmount : -scrollAmount,
+            behavior: 'auto'
+          });
+        }
       }
     };
 
@@ -44,7 +53,7 @@ export default function App() {
         setIsOpen={setIsSidebarOpen}
       />
       <div className="flex-1 flex flex-col h-screen overflow-hidden relative">
-        <TopBar 
+        <TopBar
           title={slides[currentSlideIndex].title}
           currentIndex={currentSlideIndex}
           total={slides.length}

@@ -34,6 +34,7 @@ export const SlideViewer: React.FC<SlideViewerProps> = ({ slide, direction }) =>
       <AnimatePresence initial={false} custom={direction} mode="wait">
         <motion.div
           key={slide.id}
+          id="slide-scroll-container"
           custom={direction}
           variants={variants}
           initial="enter"
