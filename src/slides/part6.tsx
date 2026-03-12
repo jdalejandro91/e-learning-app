@@ -9,7 +9,7 @@ import { Network, Minimize2, Link } from 'lucide-react';
 export const Slide39 = () => (
   <SlideLayout title="1.2.2. Aprendizaje No Supervisado" subtitle="Descubriendo lo oculto">
     <div className="flex flex-col items-center justify-center h-full">
-      <div className="bg-slate-800 p-8 rounded-3xl border border-slate-700 w-full max-w-4xl">
+      <div className="bg-slate-800 p-8 rounded-3xl border border-slate-700 w-full max-w-6xl">
         <p className="text-xl text-slate-300 leading-relaxed mb-8 text-center">
           En el aprendizaje no supervisado <strong className="text-purple-400">NO hay una variable especial de interés</strong> (variable de salida o clase). Por lo tanto, no son problemas de inferencia o predicción.
         </p>
@@ -85,7 +85,7 @@ export const Slide40 = () => {
         </div>
 
         <div className="flex-1 flex items-center justify-center">
-          <div className="w-full max-w-3xl h-[400px] bg-slate-800 rounded-2xl border border-slate-700 p-4">
+          <div className="w-full max-w-7xl h-[400px] bg-slate-800 rounded-2xl border border-slate-700 p-4">
             <ResponsiveContainer width="100%" height="100%">
               <ScatterChart margin={{ top: 20, right: 20, bottom: 20, left: 20 }}>
                 <CartesianGrid strokeDasharray="3 3" stroke="#334155" />
@@ -122,7 +122,7 @@ export const Slide40 = () => {
 export const Slide41 = () => (
   <SlideLayout title="Reglas de Asociación" subtitle="Si compras A, probablemente compres B">
     <div className="flex flex-col items-center justify-center h-full">
-      <div className="bg-slate-800 p-8 rounded-3xl border border-slate-700 w-full max-w-4xl">
+      <div className="bg-slate-800 p-8 rounded-3xl border border-slate-700 w-full max-w-6xl">
         <p className="text-xl text-slate-300 mb-8 text-center">
           Busca relaciones causa-efecto (antecedente → consecuente) entre variables.
         </p>

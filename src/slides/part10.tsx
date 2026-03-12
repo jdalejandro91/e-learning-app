@@ -12,7 +12,7 @@ export const Slide65 = () => (
     <div className="flex flex-col items-center justify-center h-full text-center">
       <ShieldCheck className="w-32 h-32 text-sky-500 mb-8" />
       <h2 className="text-4xl font-bold text-white mb-6">Validación y Evaluación de Modelos</h2>
-      <p className="text-xl text-neutral-300 max-w-3xl leading-relaxed">
+      <p className="text-xl text-neutral-300 max-w-7xl leading-relaxed">
         Aprender de los datos no es suficiente; debemos garantizar que lo aprendido es <strong className="text-sky-400">generalizable</strong> y útil para el futuro. En este capítulo estudiaremos cómo validar los algoritmos y cómo medir matemáticamente sus errores tanto en problemas de regresión como de clasificación.
       </p>
     </div>
@@ -47,7 +47,7 @@ export const Slide66 = () => (
 export const Slide67 = () => (
   <SlideLayout title="Entrenamiento vs. Test" subtitle="Separando el pasado del futuro">
     <div className="flex flex-col h-full">
-      <p className="text-lg text-neutral-300 mb-8 text-center max-w-4xl mx-auto">
+      <p className="text-lg text-neutral-300 mb-8 text-center max-w-6xl mx-auto">
         Para evaluar correctamente un aprendizaje, el modelo debe probarse prediciendo la clase de ejemplos <strong className="text-sky-400">diferentes</strong> a los que usó para aprender.
       </p>
       
@@ -208,7 +208,7 @@ export const Slide72 = () => {
   return (
     <SlideLayout title="Interactivo: Simulador Hold-out" subtitle="Ajustando el tamaño del split">
       <div className="flex flex-col items-center justify-center h-full">
-        <div className="bg-neutral-900 p-8 rounded-2xl border border-neutral-800 max-w-3xl w-full text-center">
+        <div className="bg-neutral-900 p-8 rounded-2xl border border-neutral-800 max-w-7xl w-full text-center">
           <h3 className="text-2xl font-bold text-white mb-6">Conjunto de Datos: {totalInstances} instancias</h3>
           
           <div className="mb-12">

@@ -11,7 +11,7 @@ export const Slide145 = () => {
   return (
     <SlideLayout title="Interactivo: El efecto de K" subtitle="Balanceando Sesgo y Varianza">
       <div className="flex flex-col items-center justify-center h-full">
-        <div className="bg-neutral-900 p-8 rounded-2xl border border-neutral-800 w-full max-w-4xl">
+        <div className="bg-neutral-900 p-8 rounded-2xl border border-neutral-800 w-full max-w-6xl">
           <div className="mb-8">
             <label className="block text-white text-lg mb-4 font-bold flex justify-between">
               <span>Número de Vecinos (k):</span>
@@ -164,7 +164,7 @@ export const Slide149 = () => (
 export const Slide150 = () => (
   <SlideLayout title="Transición" subtitle="De números a categorías">
     <div className="flex flex-col items-center justify-center h-full text-center">
-      <div className="bg-neutral-900 p-12 rounded-2xl border border-neutral-800 max-w-3xl w-full">
+      <div className="bg-neutral-900 p-12 rounded-2xl border border-neutral-800 max-w-7xl w-full">
         <h2 className="text-3xl font-bold text-white mb-6">Cambiando el objetivo</h2>
         <p className="text-xl text-neutral-300 mb-8">
           Hasta ahora hemos predicho valores numéricos (Regresión). Pero, ¿qué pasa si queremos predecir etiquetas discretas como "Spam" o "No Spam"?
@@ -190,7 +190,7 @@ export const Slide151 = () => (
         <Target className="w-32 h-32 text-orange-500 mb-8" />
       </motion.div>
       <h2 className="text-5xl font-bold text-white mb-6">Modelos de Clasificación</h2>
-      <p className="text-xl text-neutral-300 max-w-3xl leading-relaxed">
+      <p className="text-xl text-neutral-300 max-w-7xl leading-relaxed">
         Aprenderemos a asignar etiquetas a nuevas observaciones. 
         Exploraremos la <strong className="text-orange-400">Regresión Logística</strong> y los <strong className="text-orange-400">Árboles de Decisión</strong>, 
         comprendiendo cómo separan las clases y cómo evaluar su rendimiento.

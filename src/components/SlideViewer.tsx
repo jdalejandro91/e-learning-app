@@ -46,7 +46,7 @@ export const SlideViewer: React.FC<SlideViewerProps> = ({ slide, direction }) =>
           }}
           className="absolute inset-0 overflow-y-auto p-6 md:p-12 lg:p-16 flex flex-col"
         >
-          <div className="max-w-5xl mx-auto w-full flex-1 flex flex-col">
+          <div className="max-w-7xl mx-auto w-full flex-1 flex flex-col">
             {React.createElement(slide.component)}
           </div>
         </motion.div>

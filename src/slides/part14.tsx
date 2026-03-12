@@ -11,7 +11,7 @@ export const Slide105 = () => (
     <div className="flex flex-col items-center justify-center h-full text-center">
       <Grid className="w-32 h-32 text-purple-500 mb-8" />
       <h2 className="text-4xl font-bold text-white mb-6">Vuelta Atrás</h2>
-      <p className="text-xl text-neutral-300 max-w-3xl leading-relaxed">
+      <p className="text-xl text-neutral-300 max-w-7xl leading-relaxed">
         El Backtracking es una técnica algorítmica para resolver problemas recursivamente intentando construir una solución incrementalmente, una pieza a la vez, <strong className="text-purple-400">eliminando aquellas soluciones que fallan en satisfacer las restricciones del problema</strong> en cualquier punto del tiempo.
       </p>
     </div>
@@ -108,7 +108,7 @@ export const Slide108 = () => {
   return (
     <SlideLayout title="Interactivo: 4-Reinas con Backtracking" subtitle="Observa la poda en acción">
       <div className="flex flex-col items-center justify-center h-full">
-        <div className="bg-neutral-900 p-8 rounded-2xl border border-neutral-800 max-w-4xl w-full text-center">
+        <div className="bg-neutral-900 p-8 rounded-2xl border border-neutral-800 max-w-6xl w-full text-center">
           
           <div className="flex justify-between items-center mb-8">
             <button onClick={() => setStep(s => Math.max(0, s - 1))} disabled={step === 0} className="px-4 py-2 bg-neutral-800 text-white rounded-lg disabled:opacity-50">Anterior</button>
@@ -170,7 +170,7 @@ export const Slide109 = () => (
 export const Slide110 = () => (
   <SlideLayout title="Resumen: Técnicas de Diseño" subtitle="Comparativa final">
     <div className="flex flex-col items-center justify-center h-full">
-      <div className="bg-neutral-900 p-8 rounded-2xl border border-neutral-800 max-w-5xl w-full">
+      <div className="bg-neutral-900 p-8 rounded-2xl border border-neutral-800 max-w-7xl w-full">
         <table className="w-full text-left border-collapse">
           <thead>
             <tr className="border-b-2 border-neutral-700">
@@ -215,7 +215,7 @@ export const Slide110 = () => (
 export const Slide111 = () => (
   <SlideLayout title="Árbol de Decisión para Elegir Algoritmo" subtitle="¿Qué técnica usar?">
     <div className="flex flex-col items-center justify-center h-full">
-      <div className="bg-neutral-900 p-8 rounded-2xl border border-neutral-800 max-w-4xl w-full text-center">
+      <div className="bg-neutral-900 p-8 rounded-2xl border border-neutral-800 max-w-6xl w-full text-center">
         <h3 className="text-2xl font-bold text-white mb-8">Flujo de Pensamiento</h3>
         
         <div className="space-y-4 text-left max-w-2xl mx-auto">

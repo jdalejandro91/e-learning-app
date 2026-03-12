@@ -62,8 +62,8 @@ export const Slide21 = () => (
 
 export const Slide21a = () => (
   <SlideLayout title="Código: Procesamiento Básico de Imágenes RGB" subtitle="Preparando datos visuales con OpenCV">
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 h-full">
-      <div className="bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
+    <div className="flex flex-col md:flex-row gap-[2%] h-full">
+      <div className="w-full md:w-[68%] bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
         <h3 className="text-xl font-bold text-white mb-4">Implementación en Python</h3>
         <div className="flex-1 overflow-auto">
           <CodeBlock 
@@ -100,9 +100,9 @@ img_flip = cv2.flip(img, 1) # Voltea la imagen horizontalmente (efecto espejo)`}
           />
         </div>
       </div>
-      <div className="bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
+      <div className="w-full md:w-[30%] bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
         <h3 className="text-xl font-bold text-sky-400 mb-4">Explicación de Librerías y Métodos</h3>
-        <ul className="space-y-4 text-sm text-neutral-300 overflow-y-auto pr-2 custom-scrollbar">
+        <ul className="space-y-4 text-xs text-neutral-300 overflow-y-auto pr-2 custom-scrollbar">
           <li>
             <strong className="text-white">cv2 (OpenCV):</strong> Librería estándar de la industria para visión por computadora. Muy rápida, escrita en C/C++.
           </li>
@@ -129,8 +129,8 @@ img_flip = cv2.flip(img, 1) # Voltea la imagen horizontalmente (efecto espejo)`}
 
 export const Slide21b = () => (
   <SlideLayout title="Código: Extracción de Características (CV)" subtitle="De píxeles a descriptores numéricos">
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 h-full">
-      <div className="bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
+    <div className="flex flex-col md:flex-row gap-[2%] h-full">
+      <div className="w-full md:w-[68%] bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
         <h3 className="text-xl font-bold text-white mb-4">Implementación en Python</h3>
         <div className="flex-1 overflow-auto">
           <CodeBlock 
@@ -168,9 +168,9 @@ kp, des = sift.detectAndCompute(img_gray, None) # Detecta puntos clave y calcula
           />
         </div>
       </div>
-      <div className="bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
+      <div className="w-full md:w-[30%] bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
         <h3 className="text-xl font-bold text-sky-400 mb-4">Explicación de Librerías y Métodos</h3>
-        <ul className="space-y-4 text-sm text-neutral-300 overflow-y-auto pr-2 custom-scrollbar">
+        <ul className="space-y-4 text-xs text-neutral-300 overflow-y-auto pr-2 custom-scrollbar">
           <li>
             <strong className="text-white">skimage (scikit-image):</strong> Colección de algoritmos para procesamiento de imágenes en Python, construida sobre scipy.
           </li>
@@ -197,8 +197,8 @@ kp, des = sift.detectAndCompute(img_gray, None) # Detecta puntos clave y calcula
 
 export const Slide21c = () => (
   <SlideLayout title="Código: Segmentación Avanzada" subtitle="Detectando contornos y rellenando regiones">
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 h-full">
-      <div className="bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
+    <div className="flex flex-col md:flex-row gap-[2%] h-full">
+      <div className="w-full md:w-[68%] bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
         <h3 className="text-xl font-bold text-white mb-4">Implementación en Python</h3>
         <div className="flex-1 overflow-auto">
           <CodeBlock 
@@ -231,9 +231,9 @@ cv2.floodFill(mask_flood, ref, (500, 220), 0) # Rellena la región conectada al 
           />
         </div>
       </div>
-      <div className="bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
+      <div className="w-full md:w-[30%] bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
         <h3 className="text-xl font-bold text-sky-400 mb-4">Explicación de Librerías y Métodos</h3>
-        <ul className="space-y-4 text-sm text-neutral-300 overflow-y-auto pr-2 custom-scrollbar">
+        <ul className="space-y-4 text-xs text-neutral-300 overflow-y-auto pr-2 custom-scrollbar">
           <li>
             <strong className="text-white">cv2.GaussianBlur(src, ksize, sigmaX):</strong> Aplica un filtro de desenfoque. <code>ksize</code> (ej. (5,5)) es el tamaño del kernel (debe ser impar). Ayuda a eliminar ruido de alta frecuencia para que el detector de bordes no encuentre "falsos bordes".
           </li>
@@ -255,7 +255,7 @@ cv2.floodFill(mask_flood, ref, (500, 220), 0) # Rellena la región conectada al 
 export const Slide22 = () => (
   <SlideLayout title="1.1.7. Modelado" subtitle="Fase 4 de CRISP-DM">
     <div className="flex flex-col items-center justify-center h-full">
-      <div className="bg-purple-900/20 border border-purple-500/30 p-8 rounded-3xl w-full max-w-4xl">
+      <div className="bg-purple-900/20 border border-purple-500/30 p-8 rounded-3xl w-full max-w-6xl">
         <div className="flex items-center gap-6 mb-8">
           <div className="bg-purple-500 p-4 rounded-2xl">
             <Cpu className="w-12 h-12 text-white" />
@@ -357,7 +357,7 @@ export const Slide24 = () => (
 export const Slide25 = () => (
   <SlideLayout title="Fase 4: Generar el plan de prueba" subtitle="Diseño Experimental">
     <div className="flex flex-col items-center justify-center h-full">
-      <div className="bg-slate-800 p-8 rounded-3xl border border-slate-700 w-full max-w-4xl">
+      <div className="bg-slate-800 p-8 rounded-3xl border border-slate-700 w-full max-w-6xl">
         <h3 className="text-2xl font-bold text-purple-400 mb-6">Diseño Experimental en Ciencia de Datos</h3>
         <p className="text-lg text-slate-300 mb-8">
           Es muy importante generar un plan para probar la eficacia y validez de los modelos construidos.
@@ -429,7 +429,7 @@ export const Slide26 = () => (
 export const Slide27 = () => (
   <SlideLayout title="1.1.8. Evaluación de Negocio" subtitle="Fase 5 de CRISP-DM">
     <div className="flex flex-col items-center justify-center h-full">
-      <div className="bg-pink-900/20 border border-pink-500/30 p-8 rounded-3xl w-full max-w-4xl">
+      <div className="bg-pink-900/20 border border-pink-500/30 p-8 rounded-3xl w-full max-w-6xl">
         <div className="flex items-center gap-6 mb-8">
           <div className="bg-pink-500 p-4 rounded-2xl">
             <BarChart3 className="w-12 h-12 text-white" />
@@ -504,7 +504,7 @@ export const Slide28 = () => (
 export const Slide29 = () => (
   <SlideLayout title="1.1.9. Despliegue" subtitle="Fase 6 de CRISP-DM">
     <div className="flex flex-col items-center justify-center h-full">
-      <div className="bg-orange-900/20 border border-orange-500/30 p-8 rounded-3xl w-full max-w-4xl">
+      <div className="bg-orange-900/20 border border-orange-500/30 p-8 rounded-3xl w-full max-w-6xl">
         <div className="flex items-center gap-6 mb-8">
           <div className="bg-orange-500 p-4 rounded-2xl">
             <Rocket className="w-12 h-12 text-white" />

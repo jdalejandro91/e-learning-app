@@ -16,7 +16,7 @@ export const Slide135 = () => (
         <Users className="w-32 h-32 text-purple-500 mb-8" />
       </motion.div>
       <h2 className="text-5xl font-bold text-white mb-6">KNN para Regresión</h2>
-      <p className="text-xl text-neutral-300 max-w-3xl leading-relaxed">
+      <p className="text-xl text-neutral-300 max-w-7xl leading-relaxed">
         A diferencia de la regresión lineal, KNN es un algoritmo <strong className="text-purple-400">no paramétrico</strong> y <strong className="text-purple-400">basado en instancias</strong>. 
         No aprende una función global, sino que predice basándose en la similitud local.
       </p>
@@ -94,7 +94,7 @@ export const Slide138 = () => (
           <MathFormula block tex="d(x, y) = \left( \sum_{i=1}^{n} |x_i - y_i|^p \right)^{1/p}" />
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-3xl">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-7xl">
           <div className="p-6 bg-neutral-800/50 rounded-xl border border-neutral-700">
             <h4 className="text-purple-400 font-bold mb-2">Si p = 1</h4>
             <p className="text-sm text-neutral-300">Distancia de <strong>Manhattan</strong> (L1). Suma de diferencias absolutas.</p>
@@ -175,7 +175,7 @@ export const Slide141 = () => (
           <Scale className="text-yellow-500" size={40} />
         </div>
         <h3 className="text-3xl font-bold text-white mb-6">El peso de las variables</h3>
-        <p className="text-xl text-neutral-300 max-w-3xl mb-8">
+        <p className="text-xl text-neutral-300 max-w-7xl mb-8">
           En KNN estándar, todos los atributos contribuyen por igual a la distancia. Pero en la realidad, algunos atributos son más informativos que otros.
         </p>
         
@@ -266,8 +266,8 @@ y_pred = pipe.predict(X_test)
 
 export const Slide143a = () => (
   <SlideLayout title="Código: KNN Regressor Explicado" subtitle="Desgranando la implementación">
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 h-full">
-      <div className="bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
+    <div className="flex flex-col md:flex-row gap-[2%] h-full">
+      <div className="w-full md:w-[68%] bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
         <h3 className="text-xl font-bold text-white mb-4">Implementación en Scikit-Learn</h3>
         <div className="flex-1 overflow-auto">
           <CodeBlock 
@@ -297,9 +297,9 @@ y_pred = pipe.predict(X_test)`}
           />
         </div>
       </div>
-      <div className="bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
+      <div className="w-full md:w-[30%] bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
         <h3 className="text-xl font-bold text-sky-400 mb-4">Explicación de Librerías y Métodos</h3>
-        <ul className="space-y-4 text-sm text-neutral-300 overflow-y-auto pr-2 custom-scrollbar">
+        <ul className="space-y-4 text-xs text-neutral-300 overflow-y-auto pr-2 custom-scrollbar">
           <li>
             <strong className="text-white">sklearn.neighbors.KNeighborsRegressor:</strong> Clase que implementa la regresión basada en los k vecinos más cercanos.
           </li>
@@ -323,8 +323,8 @@ y_pred = pipe.predict(X_test)`}
 
 export const Slide143b = () => (
   <SlideLayout title="Código: Búsqueda de Hiperparámetros" subtitle="Optimizando KNN con GridSearchCV">
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 h-full">
-      <div className="bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
+    <div className="flex flex-col md:flex-row gap-[2%] h-full">
+      <div className="w-full md:w-[68%] bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
         <h3 className="text-xl font-bold text-white mb-4">Implementación en Scikit-Learn</h3>
         <div className="flex-1 overflow-auto">
           <CodeBlock 
@@ -363,9 +363,9 @@ y_pred = model.predict(X_test)`}
           />
         </div>
       </div>
-      <div className="bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
+      <div className="w-full md:w-[30%] bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
         <h3 className="text-xl font-bold text-sky-400 mb-4">Explicación de Librerías y Métodos</h3>
-        <ul className="space-y-4 text-sm text-neutral-300 overflow-y-auto pr-2 custom-scrollbar">
+        <ul className="space-y-4 text-xs text-neutral-300 overflow-y-auto pr-2 custom-scrollbar">
           <li>
             <strong className="text-white">sklearn.model_selection.GridSearchCV:</strong> Realiza una búsqueda exhaustiva (fuerza bruta) sobre los valores de hiperparámetros especificados para un estimador.
           </li>

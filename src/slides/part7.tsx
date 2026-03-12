@@ -12,7 +12,7 @@ export const Slide45 = () => (
       <motion.div
         initial={{ scale: 0.9, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
-        className="bg-neutral-900 p-10 rounded-3xl border border-neutral-800 shadow-2xl max-w-4xl w-full text-center"
+        className="bg-neutral-900 p-10 rounded-3xl border border-neutral-800 shadow-2xl max-w-6xl w-full text-center"
       >
         <Database className="w-24 h-24 text-green-500 mx-auto mb-8" />
         <h3 className="text-3xl font-bold text-white mb-6">El Conjunto de Datos (Dataset)</h3>
@@ -161,7 +161,7 @@ print(json_str) # Imprime el string JSON resultante`}
 export const Slide47 = () => (
   <SlideLayout title="1.3.2. Nomenclatura en Minería de Datos" subtitle="Instancias, clase y atributos">
     <div className="flex flex-col items-center h-full">
-      <div className="w-full max-w-5xl bg-neutral-900 rounded-2xl border border-neutral-800 overflow-hidden mb-8">
+      <div className="w-full max-w-7xl bg-neutral-900 rounded-2xl border border-neutral-800 overflow-hidden mb-8">
         <table className="w-full text-center border-collapse">
           <thead>
             <tr>
@@ -207,7 +207,7 @@ export const Slide47 = () => (
         </table>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-5xl">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-7xl">
         <div className="bg-black p-6 rounded-xl border border-neutral-800">
           <h4 className="text-white font-bold mb-2">Instancia (<MathFormula tex="e_i" />)</h4>
           <p className="text-sm text-neutral-400">Cada fila de la tabla. También llamada ejemplo, muestra, observación o punto.</p>
@@ -240,7 +240,7 @@ export const Slide48 = () => {
     <SlideLayout title="Interactivo: Explorando la Matriz" subtitle="Pasa el ratón sobre la tabla para identificar sus partes">
       <div className="flex flex-col items-center justify-center h-full">
         
-        <div className="w-full max-w-4xl bg-neutral-900 rounded-2xl border border-neutral-800 overflow-hidden mb-8 relative">
+        <div className="w-full max-w-6xl bg-neutral-900 rounded-2xl border border-neutral-800 overflow-hidden mb-8 relative">
           <table className="w-full text-center border-collapse relative z-10">
             <thead>
               <tr>
@@ -281,7 +281,7 @@ export const Slide48 = () => {
           </table>
         </div>
 
-        <div className="h-24 flex items-center justify-center w-full max-w-4xl">
+        <div className="h-24 flex items-center justify-center w-full max-w-6xl">
           <AnimatePresence mode="wait">
             {hoveredRow !== null && hoveredCol === null && (
               <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }} className="text-center">
@@ -373,8 +373,8 @@ export const Slide49 = () => (
 
 export const Slide49a = () => (
   <SlideLayout title="Código: Estadística Descriptiva en Python" subtitle="Analizando datos 1D con NumPy y SciPy">
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 h-full">
-      <div className="bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
+    <div className="flex flex-col md:flex-row gap-[2%] h-full">
+      <div className="w-full md:w-[68%] bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
         <h3 className="text-xl font-bold text-white mb-4">Implementación</h3>
         <div className="flex-1 overflow-auto">
           <CodeBlock 
@@ -404,9 +404,9 @@ print(f"Asimetría: {asimetria:.2f}, Curtosis: {curtosis:.2f}") # Imprime asimet
           />
         </div>
       </div>
-      <div className="bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
+      <div className="w-full md:w-[30%] bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
         <h3 className="text-xl font-bold text-sky-400 mb-4">Explicación de Librerías y Métodos</h3>
-        <ul className="space-y-4 text-sm text-neutral-300 overflow-y-auto pr-2 custom-scrollbar">
+        <ul className="space-y-4 text-xs text-neutral-300 overflow-y-auto pr-2 custom-scrollbar">
           <li>
             <strong className="text-white">numpy (np):</strong> Librería fundamental para computación científica en Python. Maneja arreglos multidimensionales de forma eficiente.
           </li>

@@ -10,7 +10,7 @@ import { Target, SplitSquareHorizontal, RefreshCw, Activity } from 'lucide-react
 export const Slide59 = () => (
   <SlideLayout title="1.5. Evaluación de Modelos" subtitle="¿Cómo sabemos si nuestro modelo es bueno?">
     <div className="flex flex-col items-center justify-center h-full">
-      <div className="bg-neutral-900 p-10 rounded-3xl border border-neutral-800 shadow-2xl max-w-4xl w-full text-center">
+      <div className="bg-neutral-900 p-10 rounded-3xl border border-neutral-800 shadow-2xl max-w-6xl w-full text-center">
         <Target className="w-24 h-24 text-green-500 mx-auto mb-8" />
         <h3 className="text-3xl font-bold text-white mb-6">El objetivo final</h3>
         <p className="text-xl text-neutral-300 leading-relaxed mb-8">
@@ -44,7 +44,7 @@ export const Slide60 = () => {
   return (
     <SlideLayout title="1.5.1. Particionado de Datos" subtitle="Train, Validation, Test">
       <div className="flex flex-col h-full">
-        <p className="text-lg text-neutral-300 mb-8 text-center max-w-4xl mx-auto">
+        <p className="text-lg text-neutral-300 mb-8 text-center max-w-6xl mx-auto">
           Para evaluar un modelo, dividimos nuestro dataset original. La regla de oro: <strong className="text-red-400">NUNCA evalúes el modelo con los mismos datos que usaste para entrenarlo.</strong>
         </p>
 
@@ -193,14 +193,14 @@ export const Slide61 = () => {
 export const Slide62 = () => (
   <SlideLayout title="1.5.3. Validación Cruzada (K-Fold)" subtitle="Aprovechando al máximo los datos">
     <div className="flex flex-col h-full">
-      <p className="text-lg text-neutral-300 mb-8 text-center max-w-4xl mx-auto">
+      <p className="text-lg text-neutral-300 mb-8 text-center max-w-6xl mx-auto">
         Si tenemos pocos datos, apartar un 20% para Test puede ser arriesgado (podríamos tener mala suerte con la partición). La <strong className="text-green-400">Validación Cruzada</strong> resuelve esto entrenando y evaluando múltiples veces.
       </p>
 
       <div className="bg-neutral-900 p-8 rounded-2xl border border-neutral-800 flex-1 flex flex-col justify-center items-center">
         <h3 className="text-xl font-bold text-white mb-8">Ejemplo: K-Fold con K=5</h3>
         
-        <div className="space-y-4 w-full max-w-3xl">
+        <div className="space-y-4 w-full max-w-7xl">
           {[1, 2, 3, 4, 5].map((iteration) => (
             <div key={iteration} className="flex items-center gap-4">
               <span className="text-neutral-500 font-mono w-20">Iteración {iteration}</span>
@@ -220,7 +220,7 @@ export const Slide62 = () => (
           ))}
         </div>
 
-        <div className="mt-10 p-6 bg-black rounded-xl border border-neutral-800 max-w-3xl w-full text-center">
+        <div className="mt-10 p-6 bg-black rounded-xl border border-neutral-800 max-w-7xl w-full text-center">
           <p className="text-neutral-300">
             El rendimiento final del modelo es el <strong className="text-green-400">promedio</strong> de las 5 iteraciones. Esto nos da una estimación mucho más robusta y confiable de cómo se comportará en el mundo real.
           </p>
@@ -319,8 +319,8 @@ export const Slide63 = () => {
 
 export const Slide63a = () => (
   <SlideLayout title="Código: Métricas de Regresión" subtitle="Evaluando modelos continuos">
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 h-full">
-      <div className="bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
+    <div className="flex flex-col md:flex-row gap-[2%] h-full">
+      <div className="w-full md:w-[68%] bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
         <h3 className="text-xl font-bold text-white mb-4">Implementación en Scikit-Learn</h3>
         <div className="flex-1 overflow-auto">
           <CodeBlock 
@@ -357,9 +357,9 @@ print(f"MAPE: {mape}%") # Imprime el porcentaje de error`}
           />
         </div>
       </div>
-      <div className="bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
+      <div className="w-full md:w-[30%] bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
         <h3 className="text-xl font-bold text-sky-400 mb-4">Explicación de Métricas</h3>
-        <ul className="space-y-4 text-sm text-neutral-300 overflow-y-auto pr-2 custom-scrollbar">
+        <ul className="space-y-4 text-xs text-neutral-300 overflow-y-auto pr-2 custom-scrollbar">
           <li>
             <strong className="text-white">MAE (Mean Absolute Error):</strong> Promedio de las diferencias absolutas entre predicción y valor real. Es fácil de interpretar (está en las mismas unidades que la variable objetivo).
           </li>
@@ -380,8 +380,8 @@ print(f"MAPE: {mape}%") # Imprime el porcentaje de error`}
 
 export const Slide63b = () => (
   <SlideLayout title="Código: Métricas de Clasificación" subtitle="Evaluando modelos categóricos">
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 h-full">
-      <div className="bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
+    <div className="flex flex-col md:flex-row gap-[2%] h-full">
+      <div className="w-full md:w-[68%] bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
         <h3 className="text-xl font-bold text-white mb-4">Implementación en Scikit-Learn</h3>
         <div className="flex-1 overflow-auto">
           <CodeBlock 
@@ -419,9 +419,9 @@ print(reporte) # Imprime el reporte detallado`}
           />
         </div>
       </div>
-      <div className="bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
+      <div className="w-full md:w-[30%] bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
         <h3 className="text-xl font-bold text-green-400 mb-4">Explicación de Librerías y Métodos</h3>
-        <ul className="space-y-4 text-sm text-neutral-300 overflow-y-auto pr-2 custom-scrollbar">
+        <ul className="space-y-4 text-xs text-neutral-300 overflow-y-auto pr-2 custom-scrollbar">
           <li>
             <strong className="text-white">confusion_matrix:</strong> Genera una matriz 2x2 (para clasificación binaria). La diagonal principal <code>[0,0]</code> y <code>[1,1]</code> contiene los aciertos (Verdaderos Negativos y Verdaderos Positivos).
           </li>

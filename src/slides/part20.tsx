@@ -17,7 +17,7 @@ export const Slide165 = () => (
         <GitBranch className="w-32 h-32 text-green-500 mb-8" />
       </motion.div>
       <h2 className="text-5xl font-bold text-white mb-6">Árboles de Decisión</h2>
-      <p className="text-xl text-neutral-300 max-w-3xl leading-relaxed">
+      <p className="text-xl text-neutral-300 max-w-7xl leading-relaxed">
         Los Árboles de Decisión son modelos que dividen el espacio de datos mediante una serie de <strong>preguntas lógicas jerárquicas</strong>. 
         Son famosos por su <strong className="text-green-400">extrema interpretabilidad</strong>, ya que imitan el razonamiento humano.
       </p>
@@ -199,8 +199,8 @@ plt.show() # Muestra el gráfico en pantalla`} />
 
 export const Slide170a = () => (
   <SlideLayout title="Código: Árbol de Decisión Explicado" subtitle="Desgranando la implementación">
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 h-full">
-      <div className="bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
+    <div className="flex flex-col md:flex-row gap-[2%] h-full">
+      <div className="w-full md:w-[68%] bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
         <h3 className="text-xl font-bold text-white mb-4">Implementación en Scikit-Learn</h3>
         <div className="flex-1 overflow-auto">
           <CodeBlock 
@@ -236,9 +236,9 @@ plt.show() # Renderiza la imagen`}
           />
         </div>
       </div>
-      <div className="bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
+      <div className="w-full md:w-[30%] bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
         <h3 className="text-xl font-bold text-sky-400 mb-4">Explicación de Librerías y Métodos</h3>
-        <ul className="space-y-4 text-sm text-neutral-300 overflow-y-auto pr-2 custom-scrollbar">
+        <ul className="space-y-4 text-xs text-neutral-300 overflow-y-auto pr-2 custom-scrollbar">
           <li>
             <strong className="text-white">sklearn.tree.DecisionTreeClassifier:</strong> Clase que implementa el algoritmo CART para clasificación mediante árboles de decisión.
           </li>
@@ -259,8 +259,8 @@ plt.show() # Renderiza la imagen`}
 
 export const Slide170b = () => (
   <SlideLayout title="Código: Flujo Completo (Pipeline)" subtitle="SVM, Binarización y Curva ROC">
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 h-full">
-      <div className="bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
+    <div className="flex flex-col md:flex-row gap-[2%] h-full">
+      <div className="w-full md:w-[68%] bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
         <h3 className="text-xl font-bold text-white mb-4">Ejemplo Completo (Iris Dataset)</h3>
         <div className="flex-1 overflow-auto">
           <CodeBlock 
@@ -309,9 +309,9 @@ fpr, tpr, th = metrics.roc_curve(y_test_bin[:,0], y_prob[:,0])`}
           />
         </div>
       </div>
-      <div className="bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
+      <div className="w-full md:w-[30%] bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
         <h3 className="text-xl font-bold text-sky-400 mb-4">Explicación de Librerías y Métodos</h3>
-        <ul className="space-y-4 text-sm text-neutral-300 overflow-y-auto pr-2 custom-scrollbar">
+        <ul className="space-y-4 text-xs text-neutral-300 overflow-y-auto pr-2 custom-scrollbar">
           <li>
             <strong className="text-white">sklearn.svm.SVC:</strong> Support Vector Classifier. Un algoritmo potente que busca el hiperplano que maximiza el margen entre clases. El parámetro <code>probability=True</code> fuerza al modelo a calcular probabilidades (es más lento, pero necesario para ROC).
           </li>
@@ -393,7 +393,7 @@ export const Slide173 = () => (
       <div className="bg-neutral-900 p-8 rounded-2xl border border-neutral-800 flex-1 flex flex-col items-center justify-center text-center">
         <h3 className="text-3xl font-bold text-white mb-8">¿Cómo evitamos el sobreajuste?</h3>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-5xl text-left">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-7xl text-left">
           <div className="bg-black p-6 rounded-2xl border border-green-500/20">
             <h4 className="text-green-400 font-bold mb-2">max_depth</h4>
             <p className="text-sm text-neutral-400">Limita la profundidad máxima del árbol. Es el hiperparámetro más común.</p>

@@ -11,7 +11,7 @@ export const Slide1 = () => (
         initial={{ scale: 0.8, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className="bg-slate-800 p-12 rounded-3xl border border-slate-700 shadow-2xl max-w-3xl w-full"
+        className="bg-slate-800 p-12 rounded-3xl border border-slate-700 shadow-2xl max-w-7xl w-full"
       >
         <BrainCircuit className="w-32 h-32 text-sky-400 mx-auto mb-8" />
         <h1 className="text-5xl font-extrabold text-white mb-6">
@@ -131,8 +131,8 @@ export const Slide3 = () => (
 
 export const Slide3a = () => (
   <SlideLayout title="Código: Modelos Teóricos y Frontera Bayesiana" subtitle="Simulación con SciPy">
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 h-full">
-      <div className="bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
+    <div className="flex flex-col md:flex-row gap-[2%] h-full">
+      <div className="w-full md:w-[68%] bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
         <h3 className="text-xl font-bold text-white mb-4">Implementación en Python</h3>
         <div className="flex-1 overflow-auto">
           <CodeBlock 
@@ -166,9 +166,9 @@ print("Error pob 2:", d2.cdf(minx)) # Imprime el error de la población 2 (área
           />
         </div>
       </div>
-      <div className="bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
+      <div className="w-full md:w-[30%] bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
         <h3 className="text-xl font-bold text-sky-400 mb-4">Explicación de Librerías y Métodos</h3>
-        <ul className="space-y-4 text-sm text-neutral-300 overflow-y-auto pr-2 custom-scrollbar">
+        <ul className="space-y-4 text-xs text-neutral-300 overflow-y-auto pr-2 custom-scrollbar">
           <li>
             <strong className="text-white">scipy.stats.norm:</strong> Crea una variable aleatoria continua normal. 
             <br/><span className="text-neutral-400">Parámetros: <code>loc</code> (media), <code>scale</code> (desviación estándar).</span>
@@ -196,8 +196,8 @@ print("Error pob 2:", d2.cdf(minx)) # Imprime el error de la población 2 (área
 
 export const Slide3b = () => (
   <SlideLayout title="Código: Modelos Empíricos (Machine Learning)" subtitle="Scikit-Learn en acción">
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 h-full">
-      <div className="bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
+    <div className="flex flex-col md:flex-row gap-[2%] h-full">
+      <div className="w-full md:w-[68%] bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
         <h3 className="text-xl font-bold text-white mb-4">Entrenando Clasificadores</h3>
         <div className="flex-1 overflow-auto">
           <CodeBlock 
@@ -224,9 +224,9 @@ estimador_svc.fit(X, y) # Entrena el modelo, aprendiendo una frontera curva/oval
           />
         </div>
       </div>
-      <div className="bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
+      <div className="w-full md:w-[30%] bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
         <h3 className="text-xl font-bold text-orange-400 mb-4">Explicación de Librerías y Métodos</h3>
-        <ul className="space-y-4 text-sm text-neutral-300 overflow-y-auto pr-2 custom-scrollbar">
+        <ul className="space-y-4 text-xs text-neutral-300 overflow-y-auto pr-2 custom-scrollbar">
           <li>
             <strong className="text-white">LogisticRegression:</strong> Modelo lineal. Asume que las clases pueden separarse con una línea recta (o hiperplano).
           </li>
@@ -251,7 +251,7 @@ estimador_svc.fit(X, y) # Entrena el modelo, aprendiendo una frontera curva/oval
 export const Slide4 = () => (
   <SlideLayout title="Minería de Datos (Data Mining)" subtitle="El contexto del Aprendizaje Automático">
     <div className="flex flex-col items-center justify-center h-full">
-      <div className="relative w-full max-w-4xl p-8">
+      <div className="relative w-full max-w-6xl p-8">
         <div className="absolute inset-0 bg-slate-800 rounded-3xl border border-slate-700 transform -skew-y-2"></div>
         <div className="relative z-10 bg-slate-800 p-10 rounded-3xl border border-slate-600 shadow-xl">
           <h3 className="text-3xl font-bold text-center text-white mb-8">El Ecosistema de los Datos</h3>
@@ -389,11 +389,11 @@ export const Slide7 = () => (
 export const Slide8 = () => (
   <SlideLayout title="Fases de CRISP-DM" subtitle="Un ciclo iterativo de 6 fases">
     <div className="flex flex-col items-center justify-center h-full">
-      <p className="text-xl text-slate-300 mb-12 text-center max-w-3xl">
+      <p className="text-xl text-slate-300 mb-12 text-center max-w-7xl">
         CRISP-DM se compone de seis fases, las cuales dependen entre sí tanto en forma secuencial como cíclica, pudiendo existir iteraciones que permitan mejorar la aproximación obtenida.
       </p>
       
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-4xl">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-6xl">
         {[
           { id: 1, name: 'Comprensión del negocio', icon: Target, color: 'text-blue-400', bg: 'bg-blue-400/10', border: 'border-blue-400/30' },
           { id: 2, name: 'Comprensión de los datos', icon: Search, color: 'text-cyan-400', bg: 'bg-cyan-400/10', border: 'border-cyan-400/30' },

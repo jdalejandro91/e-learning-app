@@ -11,7 +11,7 @@ export const Slide174 = () => {
   return (
     <SlideLayout title="Interactivo: Crecimiento del Árbol" subtitle="Visualizando el sobreajuste">
       <div className="flex flex-col items-center justify-center h-full">
-        <div className="bg-neutral-900 p-8 rounded-2xl border border-neutral-800 w-full max-w-4xl">
+        <div className="bg-neutral-900 p-8 rounded-2xl border border-neutral-800 w-full max-w-6xl">
           <div className="mb-8">
             <label className="block text-white text-lg mb-4 font-bold flex justify-between">
               <span>Profundidad Máxima (max_depth):</span>
@@ -89,7 +89,7 @@ export const Slide176 = () => (
 export const Slide177 = () => (
   <SlideLayout title="Resumen: Árboles de Decisión" subtitle="Puntos clave">
     <div className="flex flex-col items-center justify-center h-full">
-      <div className="bg-neutral-900 p-12 rounded-2xl border border-neutral-800 max-w-4xl w-full">
+      <div className="bg-neutral-900 p-12 rounded-2xl border border-neutral-800 max-w-6xl w-full">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-left">
           <div className="space-y-6">
             <div className="flex gap-4">
@@ -173,7 +173,7 @@ export const Slide178 = () => (
 export const Slide179 = () => (
   <SlideLayout title="Resumen del Curso" subtitle="Aprendizaje Supervisado">
     <div className="flex flex-col items-center justify-center h-full text-center">
-      <div className="bg-neutral-900 p-12 rounded-2xl border border-neutral-800 max-w-4xl w-full">
+      <div className="bg-neutral-900 p-12 rounded-2xl border border-neutral-800 max-w-6xl w-full">
         <h2 className="text-3xl font-bold text-white mb-8">Conceptos Consolidados</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
           <div className="p-4 bg-black rounded-xl border border-neutral-800">

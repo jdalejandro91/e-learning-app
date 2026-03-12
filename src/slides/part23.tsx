@@ -215,7 +215,7 @@ export const Slide199 = () => (
       >
         <Award className="w-40 h-40 text-yellow-500 mb-8 mx-auto" />
         <h2 className="text-5xl font-bold text-white mb-6">¡Certificado de Fundamentos!</h2>
-        <p className="text-2xl text-neutral-400 max-w-3xl mx-auto">
+        <p className="text-2xl text-neutral-400 max-w-7xl mx-auto">
           Has completado el recorrido por la Regresión y la Clasificación. 
           Ahora eres capaz de transformar datos en conocimiento accionable.
         </p>

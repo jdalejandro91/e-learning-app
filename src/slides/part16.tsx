@@ -37,8 +37,8 @@ export const Slide125 = () => (
 
 export const Slide125a = () => (
   <SlideLayout title="Código: Regresión Regularizada" subtitle="Implementando Ridge, Lasso y ElasticNet">
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 h-full">
-      <div className="bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
+    <div className="flex flex-col md:flex-row gap-[2%] h-full">
+      <div className="w-full md:w-[68%] bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
         <h3 className="text-xl font-bold text-white mb-4">Implementación en Scikit-Learn</h3>
         <div className="flex-1 overflow-auto">
           <CodeBlock 
@@ -68,9 +68,9 @@ print("Coeficientes ElasticNet:", elastic.coef_)`}
           />
         </div>
       </div>
-      <div className="bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
+      <div className="w-full md:w-[30%] bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
         <h3 className="text-xl font-bold text-sky-400 mb-4">Explicación de Librerías y Métodos</h3>
-        <ul className="space-y-4 text-sm text-neutral-300 overflow-y-auto pr-2 custom-scrollbar">
+        <ul className="space-y-4 text-xs text-neutral-300 overflow-y-auto pr-2 custom-scrollbar">
           <li>
             <strong className="text-white">sklearn.linear_model.Ridge:</strong> Implementa la regresión lineal con penalización L2. "Encoge" los coeficientes hacia cero, pero rara vez los hace exactamente cero. Útil cuando se cree que todas las variables aportan algo.
           </li>
@@ -99,7 +99,7 @@ export const Slide126 = () => {
   return (
     <SlideLayout title="Interactivo: Ajuste Lineal" subtitle="Visualizando la pendiente y el sesgo">
       <div className="flex flex-col items-center justify-center h-full">
-        <div className="bg-neutral-900 p-8 rounded-2xl border border-neutral-800 w-full max-w-4xl">
+        <div className="bg-neutral-900 p-8 rounded-2xl border border-neutral-800 w-full max-w-6xl">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div className="space-y-8">
               <div>
@@ -227,11 +227,11 @@ export const Slide129 = () => (
           <Zap className="text-red-500" size={40} />
         </div>
         <h3 className="text-3xl font-bold text-white mb-6">El peligro de la redundancia</h3>
-        <p className="text-xl text-neutral-300 max-w-3xl mb-8">
+        <p className="text-xl text-neutral-300 max-w-7xl mb-8">
           Ocurre cuando dos o más variables independientes están <strong>fuertemente correlacionadas</strong> entre sí.
         </p>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-4xl text-left">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-6xl text-left">
           <div className="bg-black p-6 rounded-2xl border border-red-500/20">
             <h4 className="text-red-400 font-bold mb-2">Consecuencia</h4>
             <p className="text-sm text-neutral-400">Los coeficientes se vuelven inestables y difíciles de interpretar. Pequeños cambios en los datos pueden cambiar drásticamente los pesos.</p>
@@ -285,7 +285,7 @@ export const Slide130 = () => (
 export const Slide131 = () => (
   <SlideLayout title="Resumen: Regresión Lineal" subtitle="Puntos clave">
     <div className="flex flex-col items-center justify-center h-full">
-      <div className="bg-neutral-900 p-12 rounded-2xl border border-neutral-800 max-w-4xl w-full">
+      <div className="bg-neutral-900 p-12 rounded-2xl border border-neutral-800 max-w-6xl w-full">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-left">
           <div className="space-y-6">
             <div className="flex gap-4">
@@ -352,7 +352,7 @@ export const Slide133 = () => (
 export const Slide134 = () => (
   <SlideLayout title="Transición" subtitle="Hacia modelos no paramétricos">
     <div className="flex flex-col items-center justify-center h-full text-center">
-      <div className="bg-neutral-900 p-12 rounded-2xl border border-neutral-800 max-w-3xl w-full">
+      <div className="bg-neutral-900 p-12 rounded-2xl border border-neutral-800 max-w-7xl w-full">
         <h2 className="text-3xl font-bold text-white mb-6">Más allá de las líneas rectas</h2>
         <p className="text-xl text-neutral-300 mb-8">
           La regresión lineal es potente pero asume una estructura rígida. ¿Qué pasa si queremos un modelo que se adapte localmente a los datos sin asumir una forma global?

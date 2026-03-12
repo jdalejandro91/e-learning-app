@@ -79,7 +79,7 @@ export const Slide76 = () => (
 export const Slide77 = () => (
   <SlideLayout title="El Problema de la Representatividad" subtitle="¿Por qué el Hold-out no siempre es suficiente?">
     <div className="flex flex-col items-center justify-center h-full">
-      <div className="bg-neutral-900 p-8 rounded-2xl border border-neutral-800 max-w-4xl w-full text-center">
+      <div className="bg-neutral-900 p-8 rounded-2xl border border-neutral-800 max-w-6xl w-full text-center">
         <AlertTriangle className="w-16 h-16 text-yellow-500 mx-auto mb-6" />
         <h3 className="text-2xl font-bold text-white mb-6">El Sesgo de la Partición</h3>
         <p className="text-lg text-neutral-300 mb-8">
@@ -148,7 +148,7 @@ export const Slide79 = () => {
   return (
     <SlideLayout title="Interactivo: K-Fold Cross Validation" subtitle={`Visualizando K=${k} iteraciones`}>
       <div className="flex flex-col items-center justify-center h-full">
-        <div className="bg-neutral-900 p-8 rounded-2xl border border-neutral-800 max-w-4xl w-full text-center">
+        <div className="bg-neutral-900 p-8 rounded-2xl border border-neutral-800 max-w-6xl w-full text-center">
           <div className="flex justify-between items-center mb-8">
             <button onClick={() => setIteration(i => Math.max(1, i - 1))} disabled={iteration === 1} className="px-4 py-2 bg-neutral-800 text-white rounded-lg disabled:opacity-50">Anterior</button>
             <h3 className="text-2xl font-bold text-white">Iteración {iteration} de {k}</h3>
@@ -283,7 +283,7 @@ export const Slide82 = () => {
   return (
     <SlideLayout title="Interactivo: Estratificación" subtitle="Observa la distribución en las bolsas">
       <div className="flex flex-col items-center justify-center h-full">
-        <div className="bg-neutral-900 p-8 rounded-2xl border border-neutral-800 max-w-3xl w-full text-center">
+        <div className="bg-neutral-900 p-8 rounded-2xl border border-neutral-800 max-w-7xl w-full text-center">
           <h3 className="text-xl font-bold text-white mb-2">Dataset Original: 20 instancias</h3>
           <p className="text-neutral-400 mb-6">16 Azules (80%) | 4 Rojas (20%)</p>
           
@@ -361,8 +361,8 @@ print("Desviación Típica: %.3f" % evaluacion.std()) # Imprime la desviación e
 
 export const Slide83a = () => (
   <SlideLayout title="Código: Bootstrapping" subtitle="Partición con remuestreo">
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 h-full">
-      <div className="bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
+    <div className="flex flex-col md:flex-row gap-[2%] h-full">
+      <div className="w-full md:w-[68%] bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
         <h3 className="text-xl font-bold text-white mb-4">Implementación en Python</h3>
         <div className="flex-1 overflow-auto">
           <CodeBlock 
@@ -392,9 +392,9 @@ print(f"Out-of-Bag (Test): {oob}")
           />
         </div>
       </div>
-      <div className="bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
+      <div className="w-full md:w-[30%] bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
         <h3 className="text-xl font-bold text-sky-400 mb-4">Explicación de Librerías y Métodos</h3>
-        <ul className="space-y-4 text-sm text-neutral-300 overflow-y-auto pr-2 custom-scrollbar">
+        <ul className="space-y-4 text-xs text-neutral-300 overflow-y-auto pr-2 custom-scrollbar">
           <li>
             <strong className="text-white">sklearn.utils.resample:</strong> Función utilitaria de scikit-learn para remuestrear arrays o matrices dispersas de manera consistente.
           </li>

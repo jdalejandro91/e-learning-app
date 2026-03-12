@@ -39,7 +39,7 @@ export const Slide85 = () => (
 export const Slide86 = () => (
   <SlideLayout title="El peligro de ajustar con Test" subtitle="La trampa de la sobreestimación">
     <div className="flex flex-col items-center justify-center h-full">
-      <div className="bg-neutral-900 p-8 rounded-2xl border border-neutral-800 max-w-4xl w-full text-center">
+      <div className="bg-neutral-900 p-8 rounded-2xl border border-neutral-800 max-w-6xl w-full text-center">
         <ShieldAlert className="w-16 h-16 text-red-500 mx-auto mb-6" />
         <h3 className="text-2xl font-bold text-white mb-6">¿Por qué NO usar el conjunto de Test para ajustar parámetros?</h3>
         <p className="text-lg text-neutral-300 mb-8">
@@ -202,7 +202,7 @@ export const Slide90 = () => (
     <div className="flex flex-col h-full">
       <div className="bg-neutral-900 p-8 rounded-2xl border border-neutral-800 flex-1 flex flex-col items-center justify-center">
         
-        <div className="w-full max-w-4xl border-2 border-orange-500 rounded-2xl p-6 relative mb-8">
+        <div className="w-full max-w-6xl border-2 border-orange-500 rounded-2xl p-6 relative mb-8">
           <div className="absolute -top-4 left-6 bg-neutral-900 px-2 text-orange-400 font-bold">Bucle Externo (Ej. 5-Fold)</div>
           <p className="text-sm text-neutral-400 mb-4">Objetivo: Evaluar qué tan bien generaliza el modelo. En cada iteración, separa una bolsa para Test.</p>
           
@@ -221,7 +221,7 @@ export const Slide90 = () => (
           <p className="text-sm text-orange-300 mt-4 text-center">El bucle externo entrena un modelo con K=3 usando todo su Train, y lo evalúa en su Test.</p>
         </div>
 
-        <div className="bg-black p-4 rounded-xl border border-neutral-700 max-w-3xl text-center">
+        <div className="bg-black p-4 rounded-xl border border-neutral-700 max-w-7xl text-center">
           <p className="text-sm text-neutral-300"><strong>Nota crucial:</strong> La Validación Anidada NO devuelve un único modelo final ni un único parámetro óptimo. Devuelve una <strong>estimación insesgada del rendimiento</strong> que puedes esperar al aplicar tu metodología de ajuste de parámetros a datos nuevos.</p>
         </div>
 
@@ -248,7 +248,7 @@ export const Slide91 = () => {
   return (
     <SlideLayout title="Interactivo: Explorador Anidado" subtitle="Simulación de Nested CV (5x3)">
       <div className="flex flex-col items-center justify-center h-full">
-        <div className="bg-neutral-900 p-8 rounded-2xl border border-neutral-800 max-w-4xl w-full text-center">
+        <div className="bg-neutral-900 p-8 rounded-2xl border border-neutral-800 max-w-6xl w-full text-center">
           
           <div className="flex justify-between items-center mb-8">
             <button onClick={() => {setOuterFold(f => Math.max(1, f - 1)); setBestParam(null);}} disabled={outerFold === 1 || innerFold > 0} className="px-4 py-2 bg-neutral-800 text-white rounded-lg disabled:opacity-50">Anterior (Ext)</button>
@@ -334,7 +334,7 @@ export const Slide92 = () => (
 export const Slide93 = () => (
   <SlideLayout title="Resumen de Estrategias" subtitle="¿Cuándo usar qué?">
     <div className="flex flex-col items-center justify-center h-full">
-      <div className="bg-neutral-900 p-8 rounded-2xl border border-neutral-800 max-w-5xl w-full">
+      <div className="bg-neutral-900 p-8 rounded-2xl border border-neutral-800 max-w-7xl w-full">
         <table className="w-full text-left border-collapse">
           <thead>
             <tr className="border-b-2 border-neutral-700">
@@ -373,8 +373,8 @@ export const Slide93 = () => (
 
 export const Slide93a = () => (
   <SlideLayout title="Código: Curvas de Validación y Aprendizaje" subtitle="Diagnóstico visual de modelos">
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 h-full">
-      <div className="bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
+    <div className="flex flex-col md:flex-row gap-[2%] h-full">
+      <div className="w-full md:w-[68%] bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
         <h3 className="text-xl font-bold text-white mb-4">Implementación en Scikit-Learn</h3>
         <div className="flex-1 overflow-auto">
           <CodeBlock 
@@ -412,9 +412,9 @@ N, train_lc, val_lc = learning_curve(
           />
         </div>
       </div>
-      <div className="bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
+      <div className="w-full md:w-[30%] bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
         <h3 className="text-xl font-bold text-sky-400 mb-4">Explicación de Librerías y Métodos</h3>
-        <ul className="space-y-4 text-sm text-neutral-300 overflow-y-auto pr-2 custom-scrollbar">
+        <ul className="space-y-4 text-xs text-neutral-300 overflow-y-auto pr-2 custom-scrollbar">
           <li>
             <strong className="text-white">make_pipeline:</strong> Construye una secuencia de transformadores y un estimador final. Aquí encadena la creación de características polinómicas con la regresión lineal.
           </li>

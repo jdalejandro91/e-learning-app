@@ -17,7 +17,7 @@ export const Slide115 = () => (
         <TrendingUp className="w-32 h-32 text-sky-500 mb-8" />
       </motion.div>
       <h2 className="text-5xl font-bold text-white mb-6">Modelos de Regresión</h2>
-      <p className="text-xl text-neutral-300 max-w-3xl leading-relaxed">
+      <p className="text-xl text-neutral-300 max-w-7xl leading-relaxed">
         En este capítulo exploraremos algoritmos para predecir variables numéricas continuas. 
         Analizaremos la <strong className="text-sky-400">Regresión Lineal Múltiple</strong> y los <strong className="text-sky-400">Vecinos Más Cercanos (KNN)</strong>, 
         comprendiendo sus fundamentos matemáticos y aplicaciones prácticas.
@@ -85,7 +85,7 @@ export const Slide117 = () => (
     <div className="flex flex-col h-full">
       <div className="bg-neutral-900 p-8 rounded-2xl border border-neutral-800 flex-1 flex flex-col items-center justify-center">
         <h3 className="text-2xl font-bold text-white mb-6">¿Cómo encontramos los pesos óptimos?</h3>
-        <p className="text-lg text-neutral-300 mb-8 text-center max-w-3xl">
+        <p className="text-lg text-neutral-300 mb-8 text-center max-w-7xl">
           OLS es el método clásico que minimiza la <strong>Suma de los Errores al Cuadrado (RSS)</strong> entre los valores reales y las predicciones del modelo.
         </p>
         
@@ -269,8 +269,8 @@ print(f"R2 Score: {r2:.4f}") # Imprime el R², indicando qué porcentaje de la v
 
 export const Slide121a = () => (
   <SlideLayout title="Código: Regresión Lineal Explicada" subtitle="Desgranando la implementación">
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 h-full">
-      <div className="bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
+    <div className="flex flex-col md:flex-row gap-[2%] h-full">
+      <div className="w-full md:w-[68%] bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
         <h3 className="text-xl font-bold text-white mb-4">Implementación en Scikit-Learn</h3>
         <div className="flex-1 overflow-auto">
           <CodeBlock 
@@ -299,9 +299,9 @@ print(f"Sesgo (w0): {model.intercept_}")`}
           />
         </div>
       </div>
-      <div className="bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
+      <div className="w-full md:w-[30%] bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
         <h3 className="text-xl font-bold text-sky-400 mb-4">Explicación de Librerías y Métodos</h3>
-        <ul className="space-y-4 text-sm text-neutral-300 overflow-y-auto pr-2 custom-scrollbar">
+        <ul className="space-y-4 text-xs text-neutral-300 overflow-y-auto pr-2 custom-scrollbar">
           <li>
             <strong className="text-white">sklearn.linear_model.LinearRegression:</strong> Clase que implementa la Regresión Lineal por Mínimos Cuadrados Ordinarios (OLS).
           </li>
@@ -322,8 +322,8 @@ print(f"Sesgo (w0): {model.intercept_}")`}
 
 export const Slide121b = () => (
   <SlideLayout title="Código: Guardar y Cargar Modelos" subtitle="Persistencia con Pickle">
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 h-full">
-      <div className="bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
+    <div className="flex flex-col md:flex-row gap-[2%] h-full">
+      <div className="w-full md:w-[68%] bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
         <h3 className="text-xl font-bold text-white mb-4">Implementación en Python</h3>
         <div className="flex-1 overflow-auto">
           <CodeBlock 
@@ -361,9 +361,9 @@ prediccion = loaded_model.predict(nuevos_datos)`}
           />
         </div>
       </div>
-      <div className="bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
+      <div className="w-full md:w-[30%] bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
         <h3 className="text-xl font-bold text-sky-400 mb-4">Explicación de Librerías y Métodos</h3>
-        <ul className="space-y-4 text-sm text-neutral-300 overflow-y-auto pr-2 custom-scrollbar">
+        <ul className="space-y-4 text-xs text-neutral-300 overflow-y-auto pr-2 custom-scrollbar">
           <li>
             <strong className="text-white">pickle:</strong> Módulo estándar de Python para serialización de objetos. Convierte un objeto de Python (como nuestro modelo entrenado) en un flujo de bytes que se puede guardar en disco.
           </li>
@@ -417,8 +417,8 @@ export const Slide122 = () => (
 
 export const Slide122a = () => (
   <SlideLayout title="Código: Regresión Polinómica" subtitle="Capturando relaciones no lineales">
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 h-full">
-      <div className="bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
+    <div className="flex flex-col md:flex-row gap-[2%] h-full">
+      <div className="w-full md:w-[68%] bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
         <h3 className="text-xl font-bold text-white mb-4">Implementación en Scikit-Learn</h3>
         <div className="flex-1 overflow-auto">
           <CodeBlock 
@@ -449,9 +449,9 @@ y_pred = clf.predict(test_x_poly)`}
           />
         </div>
       </div>
-      <div className="bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
+      <div className="w-full md:w-[30%] bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
         <h3 className="text-xl font-bold text-sky-400 mb-4">Explicación de Librerías y Métodos</h3>
-        <ul className="space-y-4 text-sm text-neutral-300 overflow-y-auto pr-2 custom-scrollbar">
+        <ul className="space-y-4 text-xs text-neutral-300 overflow-y-auto pr-2 custom-scrollbar">
           <li>
             <strong className="text-white">sklearn.preprocessing.PolynomialFeatures:</strong> Clase que genera una nueva matriz de características que consiste en todas las combinaciones polinomiales de las características originales.
           </li>

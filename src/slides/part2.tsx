@@ -174,7 +174,7 @@ export const Slide14 = () => (
 export const Slide15 = () => (
   <SlideLayout title="1.1.4. Comprensión del Negocio" subtitle="Fase 1 de CRISP-DM">
     <div className="flex flex-col items-center justify-center h-full">
-      <div className="bg-blue-900/20 border border-blue-500/30 p-8 rounded-3xl w-full max-w-4xl">
+      <div className="bg-blue-900/20 border border-blue-500/30 p-8 rounded-3xl w-full max-w-6xl">
         <div className="flex items-center gap-6 mb-8">
           <div className="bg-blue-500 p-4 rounded-2xl">
             <Target className="w-12 h-12 text-white" />
@@ -254,7 +254,7 @@ export const Slide16 = () => (
 export const Slide17 = () => (
   <SlideLayout title="1.1.5. Comprensión de los Datos" subtitle="Fase 2 de CRISP-DM">
     <div className="flex flex-col items-center justify-center h-full">
-      <div className="bg-cyan-900/20 border border-cyan-500/30 p-8 rounded-3xl w-full max-w-4xl">
+      <div className="bg-cyan-900/20 border border-cyan-500/30 p-8 rounded-3xl w-full max-w-6xl">
         <div className="flex items-center gap-6 mb-8">
           <div className="bg-cyan-500 p-4 rounded-2xl">
             <Search className="w-12 h-12 text-white" />
@@ -329,7 +329,7 @@ export const Slide18 = () => (
 export const Slide19 = () => (
   <SlideLayout title="1.1.6. Preparación de los Datos" subtitle="Fase 3 de CRISP-DM">
     <div className="flex flex-col items-center justify-center h-full">
-      <div className="bg-teal-900/20 border border-teal-500/30 p-8 rounded-3xl w-full max-w-4xl">
+      <div className="bg-teal-900/20 border border-teal-500/30 p-8 rounded-3xl w-full max-w-6xl">
         <div className="flex items-center gap-6 mb-8">
           <div className="bg-teal-500 p-4 rounded-2xl">
             <Wrench className="w-12 h-12 text-white" />

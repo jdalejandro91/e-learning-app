@@ -127,8 +127,8 @@ print(f"Accuracy: {accuracy_score(y_test, y_pred)}") # Calcula e imprime la exac
 
 export const Slide158a = () => (
   <SlideLayout title="Código: Regresión Logística Explicada" subtitle="Desgranando la implementación">
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 h-full">
-      <div className="bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
+    <div className="flex flex-col md:flex-row gap-[2%] h-full">
+      <div className="w-full md:w-[68%] bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
         <h3 className="text-xl font-bold text-white mb-4">Implementación en Scikit-Learn</h3>
         <div className="flex-1 overflow-auto">
           <CodeBlock 
@@ -160,9 +160,9 @@ y_prob = clf.predict_proba(X_test)`}
           />
         </div>
       </div>
-      <div className="bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
+      <div className="w-full md:w-[30%] bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
         <h3 className="text-xl font-bold text-sky-400 mb-4">Explicación de Librerías y Métodos</h3>
-        <ul className="space-y-4 text-sm text-neutral-300 overflow-y-auto pr-2 custom-scrollbar">
+        <ul className="space-y-4 text-xs text-neutral-300 overflow-y-auto pr-2 custom-scrollbar">
           <li>
             <strong className="text-white">sklearn.linear_model.LogisticRegression:</strong> A pesar de su nombre, es un modelo lineal para <em>clasificación</em>, no para regresión.
           </li>
@@ -267,7 +267,7 @@ export const Slide162 = () => (
 export const Slide163 = () => (
   <SlideLayout title="Resumen: Regresión Logística" subtitle="Puntos clave">
     <div className="flex flex-col items-center justify-center h-full">
-      <div className="bg-neutral-900 p-12 rounded-2xl border border-neutral-800 max-w-4xl w-full">
+      <div className="bg-neutral-900 p-12 rounded-2xl border border-neutral-800 max-w-6xl w-full">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-left">
           <div className="space-y-6">
             <div className="flex gap-4">
@@ -306,7 +306,7 @@ export const Slide163 = () => (
 export const Slide164 = () => (
   <SlideLayout title="Transición" subtitle="Hacia la lógica de decisión">
     <div className="flex flex-col items-center justify-center h-full text-center">
-      <div className="bg-neutral-900 p-12 rounded-2xl border border-neutral-800 max-w-3xl w-full">
+      <div className="bg-neutral-900 p-12 rounded-2xl border border-neutral-800 max-w-7xl w-full">
         <h2 className="text-3xl font-bold text-white mb-6">¿Y si queremos reglas explícitas?</h2>
         <p className="text-xl text-neutral-300 mb-8">
           La regresión logística usa una ecuación matemática. Pero a veces, los humanos preferimos tomar decisiones basadas en una serie de preguntas lógicas.

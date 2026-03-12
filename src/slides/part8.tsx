@@ -10,7 +10,7 @@ import { Trash2, Eraser, AlertTriangle, ArrowRightLeft, Spline, Filter, Network 
 export const Slide50a = () => (
   <SlideLayout title="La API de Scikit-Learn" subtitle="Tres principios fundamentales">
     <div className="flex flex-col h-full">
-      <p className="text-lg text-neutral-300 mb-8 text-center max-w-4xl mx-auto">
+      <p className="text-lg text-neutral-300 mb-8 text-center max-w-6xl mx-auto">
         Scikit-Learn es la librería estándar para Machine Learning en Python. Su diseño es tan exitoso porque utiliza una API uniforme y consistente basada en tres conceptos clave.
       </p>
       
@@ -70,7 +70,7 @@ export const Slide50a = () => (
 export const Slide51 = () => (
   <SlideLayout title="1.4. Limpieza de Datos" subtitle="Garbage In, Garbage Out">
     <div className="flex flex-col items-center justify-center h-full">
-      <div className="bg-neutral-900 p-10 rounded-3xl border border-neutral-800 shadow-2xl max-w-4xl w-full">
+      <div className="bg-neutral-900 p-10 rounded-3xl border border-neutral-800 shadow-2xl max-w-6xl w-full">
         <div className="flex items-center gap-6 mb-8">
           <div className="bg-green-500/20 p-4 rounded-2xl border border-green-500/50">
             <Eraser className="w-16 h-16 text-green-500" />
@@ -226,7 +226,7 @@ export const Slide53 = () => {
         </div>
 
         <div className="flex-1 flex justify-center items-start mt-4">
-          <div className="w-full max-w-3xl bg-neutral-900 rounded-2xl border border-neutral-800 overflow-hidden">
+          <div className="w-full max-w-7xl bg-neutral-900 rounded-2xl border border-neutral-800 overflow-hidden">
             <table className="w-full text-center border-collapse">
               <thead>
                 <tr className="bg-black">
@@ -269,8 +269,8 @@ export const Slide53 = () => {
 
 export const Slide53a = () => (
   <SlideLayout title="Código: Imputación de Datos" subtitle="Usando SimpleImputer de Scikit-Learn">
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 h-full">
-      <div className="bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
+    <div className="flex flex-col md:flex-row gap-[2%] h-full">
+      <div className="w-full md:w-[68%] bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
         <h3 className="text-xl font-bold text-white mb-4">Implementación en Python</h3>
         <div className="flex-1 overflow-auto">
           <CodeBlock 
@@ -302,9 +302,9 @@ print(X_imputed) # Imprime la matriz resultante
           />
         </div>
       </div>
-      <div className="bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
+      <div className="w-full md:w-[30%] bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
         <h3 className="text-xl font-bold text-sky-400 mb-4">Explicación de Librerías y Métodos</h3>
-        <ul className="space-y-4 text-sm text-neutral-300 overflow-y-auto pr-2 custom-scrollbar">
+        <ul className="space-y-4 text-xs text-neutral-300 overflow-y-auto pr-2 custom-scrollbar">
           <li>
             <strong className="text-white">sklearn.impute.SimpleImputer:</strong> Clase diseñada específicamente para rellenar valores faltantes con estrategias simples.
           </li>
@@ -448,8 +448,8 @@ df['salario'] = np.clip(df['salario'], limite_inf, limite_sup)`}
 
 export const Slide55a = () => (
   <SlideLayout title="Código: Detección de Outliers" subtitle="Algoritmos en Scikit-Learn y SciPy">
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 h-full">
-      <div className="bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
+    <div className="flex flex-col md:flex-row gap-[2%] h-full">
+      <div className="w-full md:w-[68%] bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
         <h3 className="text-xl font-bold text-white mb-4">Métodos Multivariantes (Sklearn)</h3>
         <div className="flex-1 overflow-auto mb-4">
           <CodeBlock 
@@ -488,9 +488,9 @@ ls = Q3 + 1.5 * RIC # Calcula el Límite Superior (bigote superior)
           />
         </div>
       </div>
-      <div className="bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
+      <div className="w-full md:w-[30%] bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
         <h3 className="text-xl font-bold text-red-400 mb-4">Explicación de Librerías y Métodos</h3>
-        <ul className="space-y-4 text-sm text-neutral-300 overflow-y-auto pr-2 custom-scrollbar">
+        <ul className="space-y-4 text-xs text-neutral-300 overflow-y-auto pr-2 custom-scrollbar">
           <li>
             <strong className="text-white">EllipticEnvelope:</strong> Ajusta una elipse robusta a los datos centrales, ignorando los puntos más alejados. Asume que los datos inliers tienen una distribución gaussiana (normal).
           </li>
@@ -515,7 +515,7 @@ ls = Q3 + 1.5 * RIC # Calcula el Límite Superior (bigote superior)
 export const Slide56 = () => (
   <SlideLayout title="1.4.3. Escalado de Datos" subtitle="Normalización y Estandarización">
     <div className="flex flex-col h-full">
-      <p className="text-xl text-neutral-300 mb-8 text-center max-w-4xl mx-auto">
+      <p className="text-xl text-neutral-300 mb-8 text-center max-w-6xl mx-auto">
         Los algoritmos basados en distancias (KNN, K-Means) o descenso del gradiente (Redes Neuronales) son muy sensibles a la escala de las variables. <strong className="text-white">Un atributo que va de 0 a 100,000 dominará sobre uno que va de 0 a 1.</strong>
       </p>
 
@@ -556,8 +556,8 @@ export const Slide56 = () => (
 
 export const Slide56a = () => (
   <SlideLayout title="Código: Escalado de Datos" subtitle="Normalización vs Estandarización">
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 h-full">
-      <div className="bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
+    <div className="flex flex-col md:flex-row gap-[2%] h-full">
+      <div className="w-full md:w-[68%] bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
         <h3 className="text-xl font-bold text-white mb-4">Implementación en Scikit-Learn</h3>
         <div className="flex-1 overflow-auto">
           <CodeBlock 
@@ -584,9 +584,9 @@ X_std = standardizer.fit_transform(X_train) # Calcula media/std y aplica la tran
           />
         </div>
       </div>
-      <div className="bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
+      <div className="w-full md:w-[30%] bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
         <h3 className="text-xl font-bold text-sky-400 mb-4">Explicación de Librerías y Métodos</h3>
-        <ul className="space-y-4 text-sm text-neutral-300 overflow-y-auto pr-2 custom-scrollbar">
+        <ul className="space-y-4 text-xs text-neutral-300 overflow-y-auto pr-2 custom-scrollbar">
           <li>
             <strong className="text-white">sklearn.preprocessing:</strong> Módulo que contiene funciones de utilidad y clases transformadoras para cambiar vectores de características crudos a representaciones más adecuadas.
           </li>
@@ -609,8 +609,8 @@ X_std = standardizer.fit_transform(X_train) # Calcula media/std y aplica la tran
 
 export const Slide56b = () => (
   <SlideLayout title="Código: Selección de Atributos" subtitle="Filtrando características irrelevantes">
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 h-full">
-      <div className="bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
+    <div className="flex flex-col md:flex-row gap-[2%] h-full">
+      <div className="w-full md:w-[68%] bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
         <h3 className="text-xl font-bold text-white mb-4">Implementación en Scikit-Learn</h3>
         <div className="flex-1 overflow-auto">
           <CodeBlock 
@@ -636,9 +636,9 @@ mi_values = mutual_info_regression(X, y) # Calcula los scores de información mu
           />
         </div>
       </div>
-      <div className="bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
+      <div className="w-full md:w-[30%] bg-neutral-900 p-6 rounded-2xl border border-neutral-800 flex flex-col">
         <h3 className="text-xl font-bold text-green-400 mb-4">Explicación de Librerías y Métodos</h3>
-        <ul className="space-y-4 text-sm text-neutral-300 overflow-y-auto pr-2 custom-scrollbar">
+        <ul className="space-y-4 text-xs text-neutral-300 overflow-y-auto pr-2 custom-scrollbar">
           <li>
             <strong className="text-white">VarianceThreshold:</strong> Método no supervisado. Si una característica tiene la misma información en casi todas las filas (baja varianza), no aporta valor predictivo. <code>threshold=0.6</code> elimina las que tengan varianza menor a 0.6.
           </li>
@@ -660,7 +660,7 @@ mi_values = mutual_info_regression(X, y) # Calcula los scores de información mu
 export const Slide57 = () => (
   <SlideLayout title="1.4.4. Codificación de Variables Categóricas" subtitle="Traduciendo texto a números">
     <div className="flex flex-col h-full">
-      <p className="text-xl text-neutral-300 mb-8 text-center max-w-4xl mx-auto">
+      <p className="text-xl text-neutral-300 mb-8 text-center max-w-6xl mx-auto">
         Los algoritmos matemáticos no entienden texto como "Rojo" o "Madrid". Debemos convertir estas variables categóricas a representaciones numéricas.
       </p>
 

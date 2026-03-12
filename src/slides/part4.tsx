@@ -86,7 +86,7 @@ export const Slide32 = () => {
 
   return (
     <SlideLayout title="Quiz: Fases de CRISP-DM" subtitle="Pon a prueba tus conocimientos">
-      <div className="flex flex-col items-center justify-center h-full max-w-3xl mx-auto w-full">
+      <div className="flex flex-col items-center justify-center h-full max-w-7xl mx-auto w-full">
         <div className="bg-slate-800 p-8 rounded-3xl border border-slate-700 w-full">
           <h3 className="text-2xl font-bold text-white mb-8 text-center">
             ¿Cuál es la fase de CRISP-DM que generalmente demanda el mayor esfuerzo y tiempo del proyecto?
@@ -176,7 +176,7 @@ export const Slide33 = () => {
 
   return (
     <SlideLayout title="Quiz: Roles en Ciencia de Datos" subtitle="Pon a prueba tus conocimientos">
-      <div className="flex flex-col items-center justify-center h-full max-w-3xl mx-auto w-full">
+      <div className="flex flex-col items-center justify-center h-full max-w-7xl mx-auto w-full">
         <div className="bg-slate-800 p-8 rounded-3xl border border-slate-700 w-full">
           <h3 className="text-2xl font-bold text-white mb-8 text-center">
             ¿Qué rol se encarga principalmente de los procesos ETL (Extraer, Transformar, Cargar) y de proporcionar datos limpios a los demás?

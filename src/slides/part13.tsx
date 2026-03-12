@@ -11,7 +11,7 @@ export const Slide95 = () => (
     <div className="flex flex-col items-center justify-center h-full text-center">
       <TrendingUp className="w-32 h-32 text-sky-500 mb-8" />
       <h2 className="text-4xl font-bold text-white mb-6">Métricas de Regresión</h2>
-      <p className="text-xl text-neutral-300 max-w-3xl leading-relaxed">
+      <p className="text-xl text-neutral-300 max-w-7xl leading-relaxed">
         En problemas de regresión, la variable a predecir es un número real (ej. precio de una casa, temperatura, ventas). Por tanto, la evaluación no consiste en "acertar o fallar", sino en medir <strong className="text-sky-400">qué tan lejos</strong> se quedó nuestra predicción del valor real.
       </p>
     </div>

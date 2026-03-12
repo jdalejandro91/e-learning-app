@@ -10,11 +10,11 @@ import { BrainCircuit, LineChart as LineChartIcon, Target, Search, Layers, Netwo
 export const Slide34 = () => (
   <SlideLayout title="1.2. Tipos de Aprendizaje" subtitle="¿Cómo aprenden las máquinas?">
     <div className="flex flex-col items-center justify-center h-full">
-      <p className="text-xl text-slate-300 mb-12 text-center max-w-3xl">
+      <p className="text-xl text-slate-300 mb-12 text-center max-w-7xl">
         Fundamentalmente, se distinguen dos categorías de problemas que pueden resolverse mediante aprendizaje automático, dependiendo de la existencia de una <strong className="text-sky-400">variable de salida</strong> (clase).
       </p>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-5xl">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-7xl">
         <motion.div
           initial={{ x: -50, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
